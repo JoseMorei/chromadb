@@ -96,3 +96,46 @@ Top 3 similar documents to "senior Python developer full-stack":
  - ID: employee_8, Text: "Senior Architect with 20 years of experience in Engineering. Skills: System design, distributed systems, cloud platforms, technical strategy. Located in New York. Employment type: Full-time.", Score: 0.7537
  - ID: employee_6, Text: "Engineering Manager with 15 years of experience in Engineering. Skills: Team leadership, project management, software architecture, mentoring. Located in Seattle. Employment type: Full-time.", Score: 0.8344
 ```
+
+## books_advanced_search case
+
+Advanced search capabilities for a book recommendation system implementation
+
+```
+(.venv) jose.moreira@jose chromadb % python books_advanced_search.py
+Collection created: book_collection
+Collection contents:
+Number of documents: 8
+=== Book Similarity Search ===
+
+1. Finding magical fantasy adventures:
+Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+  1. Harry Potter and the Philosopher's Stone by J.K. Rowling - Distance: 0.5385
+  2. The Lord of the Rings by J.R.R. Tolkien - Distance: 0.6017
+  3. The Hunger Games by Suzanne Collins - Distance: 0.6631
+
+=== Metadata Filtering ===
+
+2. Finding Fantasy and Science Fiction books:
+  - Harry Potter and the Philosopher's Stone: Fantasy (4.5★)
+  - The Lord of the Rings: Fantasy (4.5★)
+  - The Hitchhiker's Guide to the Galaxy: Science Fiction (4.2★)
+  - Dune: Science Fiction (4.3★)
+
+3. Finding highly-rated books (4.3+):
+  - To Kill a Mockingbird: 4.3★
+  - 1984: 4.4★
+  - Harry Potter and the Philosopher's Stone: 4.5★
+  - The Lord of the Rings: 4.5★
+  - Dune: 4.3★
+
+=== Combined Search ===
+
+4. Finding highly-rated dystopian books:
+  1. 1984 (1949) - 4.4★
+     Distance: 0.4764
+  2. The Hunger Games (2008) - 4.2★
+     Distance: 0.6794
+  3. To Kill a Mockingbird (1960) - 4.3★
+     Distance: 0.7307
+```
